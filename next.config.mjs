@@ -16,12 +16,6 @@ const withNextra = nextra({
 const nextConfig = {
   reactStrictMode: true,
   basePath: '/kh-docs',
-  /*
-  images: {
-    loader: 'akamai',
-    path: '/'
-  }
-  */
 }
 
 export default withPlugins([ withNextra, withExportImages ], nextConfig)
