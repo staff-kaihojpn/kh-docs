@@ -1,0 +1,13 @@
+table{
+  word-break: keep-all;
+  overflow: auto;
+}
+
+article.nx-container {
+  max-width: 940px;
+}
+
+table .nx-px-4 {
+  padding-left: .65rem;
+  padding-right: .65rem;
+}
