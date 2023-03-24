@@ -15,6 +15,7 @@ const withNextra = nextra({
 
 const nextConfig = {
   reactStrictMode: true,
+  assetPrefix: '/kh-docs/',
   /*
   images: {
     loader: 'akamai',
