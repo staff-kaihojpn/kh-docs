@@ -2,7 +2,7 @@
 
 import withPlugins from 'next-compose-plugins'
 import nextra from 'nextra'
-import withExportImages from 'next-export-optimize-images'
+//import withExportImages from 'next-export-optimize-images'
 
 
 const withNextra = nextra({
@@ -16,6 +16,9 @@ const withNextra = nextra({
 const nextConfig = {
   reactStrictMode: true,
   basePath: '/kh-docs',
+  images: {
+    unoptimized: true
+},
 }
 
-export default withPlugins([ withNextra, withExportImages ], nextConfig)
+export default withPlugins([ withNextra ], nextConfig)
