@@ -24,4 +24,4 @@ const nextConfig = {
   */
 }
 
-export default withPlugins([ withNextra, withExportImages ], nextConfig)
+export default withPlugins([ withNextra ], nextConfig)
