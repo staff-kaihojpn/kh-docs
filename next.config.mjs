@@ -15,7 +15,8 @@ const withNextra = nextra({
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: process.env.NODE_ENV==="production" ? "/kh-docs" : "/",
+  basePath: process.env.GITHUB_ACTIONS ? "/kh-docs" : "",
+  assetPrefix: "/",
   /*
   images: {
     loader: 'akamai',
