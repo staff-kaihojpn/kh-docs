@@ -17,7 +17,7 @@ export default {
     ),
     img: ({src}) => (
       <ExportedImage
-        src={src}
+        src={`${process.env.GITHUB_PAGES ? '/kh-docs' : ''}${src}`}
         alt="Static Image"
         layout="responsive"
       />
