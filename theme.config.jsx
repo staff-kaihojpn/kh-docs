@@ -1,3 +1,6 @@
+import ExportedImage from "next-image-export-optimizer";
+
+
 /* eslint sort-keys: error */
 export default {
   components: {
@@ -12,6 +15,13 @@ export default {
         {children}
       </h1>
     ),
+    img: ({src}) => (
+      <ExportedImage
+        src={src}
+        alt="Static Image"
+        layout="responsive"
+      />
+    )
   },
   darkMode: true,
   footer: (
