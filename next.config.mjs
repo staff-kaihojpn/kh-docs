@@ -15,7 +15,7 @@ const withNextra = nextra({
 
 const nextConfig = {
   reactStrictMode: true,
-  basePath: process.env.GITHUB_PAGES ? '/kh-docs' : '',
+  basePath: '',
 }
 
 export default withPlugins([ withExportImages, withNextra ], nextConfig)
