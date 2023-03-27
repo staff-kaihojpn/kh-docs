@@ -15,7 +15,7 @@ const withNextra = nextra({
 
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/kh-docs',
+  //basePath: process.env.NODE_ENV==='production' ? '/kh-docs' : '/',
 }
 
 export default withPlugins([ withNextra, withExportImages ], nextConfig)
