@@ -16,7 +16,7 @@ const withNextra = nextra({
 const nextConfig = {
   reactStrictMode: true,
   basePath: process.env.GITHUB_PAGES ? '/kh-docs' : '',
-  assetPrefix: process.env.GITHUB_PAGES ? '/kh-docs/' : '',
+  //assetPrefix: process.env.GITHUB_PAGES ? '/kh-docs/' : '',
   /*
   images: {
     unoptimized: true,
