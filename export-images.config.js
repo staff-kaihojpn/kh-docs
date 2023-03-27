@@ -3,6 +3,7 @@
  */
 const config = {
   imageDir: '',
+  externalImageDir: ''
 }
 
 module.exports = config
