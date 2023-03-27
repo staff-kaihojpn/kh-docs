@@ -15,8 +15,13 @@ const withNextra = nextra({
 
 const nextConfig = {
   reactStrictMode: true,
-  basePath: process.env.NODE_ENV==='production' ? '/kh-docs' : '',
-  assetPrefix: process.env.NODE_ENV==='production' ? '/kh-docs/' : '',
+  basePath: process.env.GITHUB_PAGES ? '/kh-docs' : '',
+  assetPrefix: process.env.GITHUB_PAGES ? '/kh-docs/' : '',
+  /*
+  images: {
+    unoptimized: true,
+  },
+  */
 }
 
-export default withPlugins([ withNextra, withExportImages ], nextConfig)
+export default withPlugins([ withExportImages, withNextra ], nextConfig)
