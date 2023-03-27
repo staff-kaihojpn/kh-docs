@@ -19,4 +19,4 @@ const nextConfig = {
   //assetPrefix: process.env.GITHUB_PAGES ? '/kh-docs' : '',
 }
 
-export default withPlugins([ withExportImages, withNextra ], nextConfig)
+export default withPlugins([ withNextra, withExportImages ], nextConfig)
