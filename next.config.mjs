@@ -18,7 +18,7 @@ const nextConfig = {
   basePath: process.env.GITHUB_PAGES ? '/kh-docs' : '',
   //assetPrefix: process.env.GITHUB_PAGES ? '/kh-docs' : '',
   images:{
-    unoptimized: true,
+    //unoptimized: true,
     
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
