@@ -18,7 +18,7 @@ const nextConfig = {
   basePath: process.env.GITHUB_PAGES ? '/kh-docs' : '',
   //assetPrefix: process.env.GITHUB_PAGES ? '/kh-docs/' : '',
   images: {
-    path: process.env.GITHUB_PAGES ? '/kh-docs' : '/',
+    path: process.env.GITHUB_PAGES ? '/' : '/',
   }
   /*
   images: {
