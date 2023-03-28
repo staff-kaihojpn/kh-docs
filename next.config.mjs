@@ -15,7 +15,7 @@ const withNextra = nextra({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
+  // basePath: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
   //assetPrefix: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
   images:{
     loader: "custom",
