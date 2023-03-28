@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+
 
 import withPlugins from 'next-compose-plugins'
 import nextra from 'nextra'
@@ -12,6 +12,7 @@ const withNextra = nextra({
   readingTime: true
 })
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   basePath: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
@@ -29,6 +30,7 @@ const nextConfig = {
     nextImageExportOptimizer_storePicturesInWEBP: true,
     nextImageExportOptimizer_exportFolderName: "nextImageExportOptimizer",
     nextImageExportOptimizer_generateAndUseBlurImages: true,
+    GITHUB_REPO: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
   }
 }
 
