@@ -24,7 +24,6 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
-    "next-export-optimize-images": "^2.0.0",
     "serve": "^14.2.0"
   }
 }

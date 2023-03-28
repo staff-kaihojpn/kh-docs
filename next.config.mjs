@@ -2,7 +2,6 @@
 
 import withPlugins from 'next-compose-plugins'
 import nextra from 'nextra'
-import withExportImages from 'next-export-optimize-images'
 
 
 const withNextra = nextra({
