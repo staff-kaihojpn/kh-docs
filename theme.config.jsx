@@ -15,13 +15,17 @@ export default {
         {children}
       </h1>
     ),
-    img: ({src}) => (
-      <ExportedImage
-        src={`/kh-docs${src}`}
-        alt="Static Image"
-        layout="responsive"
-      />
-    )
+    img: ({src}) => {
+      console.log("process.env.GITHUB_REPO", process.env.GITHUB_REPO)
+      const basePath = process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}` : ''
+      return (
+        <ExportedImage
+          src={`${basePath}${src}`}
+          alt="Static Image"
+          layout="responsive"
+        />
+      )
+    }
   },
   darkMode: true,
   footer: (

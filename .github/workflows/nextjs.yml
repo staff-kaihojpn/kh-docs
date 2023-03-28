@@ -73,14 +73,10 @@ jobs:
       #      ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Echo repo name
-        run: echo "${GITHUB_REPOSITORY#${GITHUB_REPOSITORY_OWNER}/}" && echo "repo_name=${GITHUB_REPOSITORY#${GITHUB_REPOSITORY_OWNER}/}" >> $GITHUB_OUTPUT
-      - name: Use repo name
-        run: echo "${{ steps.repository.outputs.repo_name }}"
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
         env:
-          GITHUB_PAGES: true
+          GITHUB_REPO: ${GITHUB_REPOSITORY#${GITHUB_REPOSITORY_OWNER}/}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
