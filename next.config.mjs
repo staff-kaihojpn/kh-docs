@@ -30,7 +30,7 @@ const nextConfig = {
     nextImageExportOptimizer_storePicturesInWEBP: true,
     nextImageExportOptimizer_exportFolderName: "nextImageExportOptimizer",
     nextImageExportOptimizer_generateAndUseBlurImages: true,
-    GITHUB_REPO: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
+    basePath: process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}`  : '',
   }
 }
 
