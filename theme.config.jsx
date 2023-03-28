@@ -16,7 +16,7 @@ export default {
       </h1>
     ),
     img: ({src}) => {
-      const basePath = process.env.basePath || ''
+      const basePath = process.env.GITHUB_REPO ? `/${process.env.GITHUB_REPO}` : ''
       return (
         <ExportedImage
           src={`${basePath}${src}`}
