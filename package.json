@@ -15,7 +15,6 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
-    "next-compose-plugins": "^2.2.1",
     "next-image-export-optimizer": "^1.4.1",
     "nextra": "^2.2.20",
     "nextra-theme-blog": "^2.2.20",
@@ -24,6 +23,7 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "next-compose-plugins": "^2.2.1",
     "serve": "^14.2.0"
   }
 }

@@ -11,3 +11,7 @@ table .nx-px-4 {
   padding-left: .65rem;
   padding-right: .65rem;
 }
+
+.nx-cursor-default.nx-text-gray-400{
+  color: rgba(87,87,87,1);
+}
