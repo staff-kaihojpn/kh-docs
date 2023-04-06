@@ -5,7 +5,7 @@ import nextra from 'nextra'
 
 
 const withNextra = nextra({
-  theme: 'nextra-theme-blog',
+  theme: '@nextra-theme/clean',
   themeConfig: './theme.config.jsx',
   staticImage: false,
   defaultShowCopyCode: true,

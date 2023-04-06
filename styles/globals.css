@@ -1,17 +1,18 @@
-table{
+@import '@nextra-theme/clean/style.css';
+
+header {
+}
+
+.shipping-table table{
   word-break: keep-all;
-  overflow: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  overflow-x: auto;
 }
-
-article.nx-container {
-  max-width: 940px;
+.shipping-table th{
+  text-align: center;
+  padding: 0.25rem 0.5rem;
 }
-
-table .nx-px-4 {
-  padding-left: .65rem;
-  padding-right: .65rem;
-}
-
-.nx-cursor-default.nx-text-gray-400{
-  color: rgba(87,87,87,1);
+.shipping-table td{
+  padding: 0.25rem 0.5rem;  
 }

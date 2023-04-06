@@ -17,31 +17,10 @@ export default {
     ),
     img: ({src}) => {
       return (
-        <ExportedImage
-          src={`${src}`}
-          alt="Static Image"
-          layout="responsive"
-        />
+        <ExportedImage src={`${src}`} alt="Static Image" layout="responsive" width={1920} height={1920}/>
       )
     }
   },
   darkMode: true,
-  footer: (
-    <small style={{ display: 'block', marginTop: '8rem' }}>
-      {new Date().getFullYear()} © 開豊ジャパン
-      <a href="/feed.xml">RSS</a>
-      <style jsx>{`
-        a {
-          float: right;
-        }
-
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-          }
-        }
-      `}</style>
-    </small>
-  )
+  siteName: "開豊ジャパン"
 }
