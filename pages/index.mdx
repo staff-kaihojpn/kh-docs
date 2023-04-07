@@ -7,9 +7,5 @@ date: 2023-03-24
 import ExportedImage from "next-image-export-optimizer";
 
 <div style={{position:'relative', height:'100dvh', width:'100dvw'}}>
-  <ExportedImage 
-    src='/images/hero.jpg' alt="Hero Image" fill 
-    style={{objectFit:'cover', opacity:'0.5', filter:'contrast(1.5)'}} 
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-  />
+  <ExportedImage src='/images/hero.webp' className="nx-object-cover nx-opacity-50 nx-contrast-150" alt="Hero Image" fill />
 </div>

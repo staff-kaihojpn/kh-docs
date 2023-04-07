@@ -31,6 +31,14 @@ const nextConfig = {
     nextImageExportOptimizer_exportFolderName: "nextImageExportOptimizer",
     nextImageExportOptimizer_generateAndUseBlurImages: true,
     GITHUB_REPO: process.env.GITHUB_REPO,
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
   }
 }
 
