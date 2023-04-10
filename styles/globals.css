@@ -7,14 +7,15 @@
 header,footer,h1,h2,h3,h4,h5,h6 {
   @apply nx-font-serif
 }
+
 .hero p,.hero h2 {
-  @apply nx-inline nx-px-2 nx-bg-white/50 nx-font-serif nx-font-bold nx-decoration-clone dark:nx-bg-black/50 
+  @apply nx-inline nx-px-2 nx-bg-white/60 nx-font-serif nx-decoration-clone dark:nx-bg-black/50
 }
 .hero p {
-  @apply nx-leading-[2rem]
+  @apply nx-leading-[2rem] md:nx-font-bold
 }
 .hero h2 {
-  @apply nx-inline nx-text-4xl nx-mb-8 md:nx-text-5xl
+  @apply nx-inline nx-text-2xl nx-mb-8 sm:nx-text-4xl md:nx-text-5xl nx-font-bold
 }
 
 .shipping-table table{
