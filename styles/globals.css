@@ -7,6 +7,15 @@
 header,footer,h1,h2,h3,h4,h5,h6 {
   @apply nx-font-serif
 }
+.hero p,.hero h2 {
+  @apply nx-inline nx-px-2 nx-bg-white/50 nx-font-serif nx-font-bold nx-decoration-clone dark:nx-bg-black/50 
+}
+.hero p {
+  @apply nx-leading-[2rem]
+}
+.hero h2 {
+  @apply nx-inline nx-text-4xl nx-mb-8 md:nx-text-5xl
+}
 
 .shipping-table table{
   word-break: keep-all;
