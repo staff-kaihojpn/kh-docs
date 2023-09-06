@@ -31,13 +31,14 @@
         }
       },
       "extensions": [
-        "esbenp.prettier-vscode",
-        "ms-vscode.live-server",
-        "dbaeumer.vscode-eslint",
-        "bradlc.vscode-tailwindcss",
-        "mhutchie.git-graph",
-        "GitHub.vscode-pull-request-github"
-      ]
+		"esbenp.prettier-vscode",
+		"ms-vscode.live-server",
+		"dbaeumer.vscode-eslint",
+		"bradlc.vscode-tailwindcss",
+		"mhutchie.git-graph",
+		"GitHub.vscode-pull-request-github",
+		"unifiedjs.vscode-mdx"
+	]
     }
   }
 }
