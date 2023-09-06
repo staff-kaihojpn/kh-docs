@@ -6,7 +6,7 @@
   },
   "runArgs": ["--privileged", "--init"],
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "overrideCommand": true,
   "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
@@ -31,14 +31,14 @@
         }
       },
       "extensions": [
-		"esbenp.prettier-vscode",
-		"ms-vscode.live-server",
-		"dbaeumer.vscode-eslint",
-		"bradlc.vscode-tailwindcss",
-		"mhutchie.git-graph",
-		"GitHub.vscode-pull-request-github",
-		"unifiedjs.vscode-mdx"
-	]
+        "esbenp.prettier-vscode",
+        "ms-vscode.live-server",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "mhutchie.git-graph",
+        "GitHub.vscode-pull-request-github",
+        "unifiedjs.vscode-mdx"
+      ]
     }
   }
 }

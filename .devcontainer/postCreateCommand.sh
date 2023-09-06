@@ -11,6 +11,6 @@ echo "git config --global user.name \"Your Name\""
 echo "git config --global user.email \"Your Email\""
 echo "-----------------------------------------------"
 
-npm ci
+npm i
 
 echo "FINISH Install"
