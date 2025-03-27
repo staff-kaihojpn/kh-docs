@@ -81,7 +81,7 @@ jobs:
         env:
           GITHUB_REPO: ${{ env.REPOSITORY_NAME }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
