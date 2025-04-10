@@ -4,21 +4,28 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://docs.kaihojpn.com',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '開豊ジャパン',
+			logo: {
+				src: './src/assets/logo.svg',
+				alt: '開豊ジャパン',
+			},
+			description: '美術品との、オンラインでの特別な出会い',
+			social: [],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: '取引規定',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: '取引規定', slug: 'rules' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '配送情報',
+					items: [
+						{ label: '配送表', slug: 'shipping' },
+					],
 				},
 			],
 		}),
